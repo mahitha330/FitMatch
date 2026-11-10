@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ed">
+  <meta name="description" content="Your personal, image-specific outfit inspiration from FitMatch.">
+  <title>Your outfit inspiration — FitMatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="FitMatch home"><span class="brand-mark">f.</span> fitmatch</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="upload.html">Upload Outfit</a><a href="styles.html">Explore Styles</a><a href="index.html#about">About</a>
+    </nav>
+    <a class="header-cta" href="upload.html">Style another <span>↗</span></a>
+  </header>
+  <main class="page-main results-main section-wrap">
+    <div class="page-heading results-heading">
+      <p class="eyebrow"><span class="eyebrow-dot"></span> A look made around you</p>
+      <h1>Your outfit<br><em>inspiration.</em></h1>
+      <p>One favorite piece. Three fresh ways to make it yours.</p>
+    </div>
+    <p class="demo-note hidden" id="demo-mode-notice" role="status">Outfit pairings adapt to the sampled colours and visual details in your photo, plus your aesthetic. Garment type and pattern are not recognized locally; treat these as inspiration and choose the pieces that suit your item.</p>
+    <section class="results-summary" aria-label="Uploaded item analysis">
+      <div class="result-item-photo"><img id="result-upload-image" alt="Your uploaded clothing item"><span class="result-photo-tag">YOUR PIECE</span></div>
+      <div class="result-summary-copy">
+        <p class="eyebrow">The starting point</p>
+        <h2 id="result-category">Analyzing your piece</h2>
+        <p class="result-type" id="result-type"></p>
+        <div class="item-details">
+          <div><small>DOMINANT COLOUR</small><strong id="result-colour"></strong></div>
+          <div><small>COLOUR CATEGORY</small><strong id="result-pattern"></strong></div>
+        </div>
+        <p class="result-appearance" id="result-appearance"></p>
+        <div class="selected-style"><span class="style-sparkle">✳</span><span><small>YOUR AESTHETIC</small><strong id="result-aesthetic"></strong></span></div>
+      </div>
+      <div class="secondary-colours"><small>ALSO IN YOUR PIECE</small><div id="result-secondary-colours"></div></div>
+    </section>
+    <section class="ai-outfit-section" aria-labelledby="outfit-heading">
+      <div class="section-heading results-section-heading"><div><p class="eyebrow">Styled for your colours &amp; aesthetic</p><h2 id="outfit-heading">Three ways to <em>wear it.</em></h2></div><p class="recommendation-intro">Colour-matched outfit recipes; editorial images are mood inspiration.</p></div>
+      <div class="outfit-gallery" id="outfit-gallery"></div>
+    </section>
+    <section class="why-section" aria-labelledby="why-heading"><p class="eyebrow">The styling notes</p><h2 id="why-heading">Why this <em>matches.</em></h2><div class="why-list" id="why-list"></div></section>
+    <section class="recommendation-details" aria-label="Outfit recommendation details">
+      <article class="recommendation-group"><p class="eyebrow">01 / THE PAIRINGS</p><h2>Matching clothing</h2><div class="recommendation-list" id="clothing-recommendations"></div></article>
+      <article class="recommendation-group"><p class="eyebrow">02 / THE FINISH</p><h2>Footwear</h2><div class="recommendation-list" id="footwear-recommendations"></div></article>
+      <article class="recommendation-group"><p class="eyebrow">03 / THE DETAILS</p><h2>Accessories</h2><div class="recommendation-list" id="accessory-recommendations"></div></article>
+    </section>
+    <section class="color-pairings"><div><p class="eyebrow">04 / A LITTLE COLOR THEORY</p><h2>Colour combinations</h2></div><div class="color-chips" id="color-chips"></div></section>
+    <div class="result-actions"><a class="button button-dark" href="upload.html">Try another outfit <span>↗</span></a><a class="button button-light" href="styles.html">Explore more styles <span>→</span></a></div>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">f.</span> fitmatch</a><p>Good style is just being yourself, out loud.</p><span>© 2026 FitMatch. Made for your next favorite look.</span></footer>
+</body>
+</html>
