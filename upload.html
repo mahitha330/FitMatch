@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7f3ed"><meta name="description" content="Upload a clothing item and choose an aesthetic to discover outfit ideas.">
+  <title>Upload your piece — FitMatch</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css"><script src="./script.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html" aria-label="FitMatch home"><span class="brand-mark">f.</span> fitmatch</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="upload.html">Upload Outfit</a><a href="styles.html">Explore Styles</a><a href="index.html#about">About</a></nav><a class="header-cta" href="styles.html">Get inspired <span>↗</span></a></header>
+  <main class="page-main section-wrap"><div class="page-heading"><p class="eyebrow"><span class="eyebrow-dot"></span> Your style story starts here</p><h1>Let's style<br><em>your outfit!</em></h1><p>Upload any clothing item. We'll take care of the styling.</p></div>
+    <form class="styling-form" id="styling-form">
+      <section class="upload-panel" aria-labelledby="upload-title"><div class="panel-top"><div><p class="eyebrow">Step 01</p><h2 id="upload-title">Start with your piece</h2></div><span class="panel-step">01 <i>/ 02</i></span></div>
+        <label class="drop-zone" id="drop-zone" for="image-input" tabindex="0"><input id="image-input" class="visually-hidden" type="file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp"><span class="upload-icon">↑</span><strong>Drop your photo here</strong><span>or <span class="browse-link">browse files</span> to upload</span><small>JPG, JPEG, PNG or WEBP · up to 10 MB</small></label>
+        <div class="image-preview hidden" id="image-preview"><img id="preview-image" alt="Preview of your clothing item"><div class="preview-caption"><span><strong id="file-name">Your clothing item</strong><small id="file-size"></small></span><button class="remove-image" id="remove-image" type="button" aria-label="Remove uploaded image">×</button></div><button class="replace-image" id="replace-image" type="button">Replace photo</button></div>
+        <p class="upload-message" id="upload-message" role="status" aria-live="polite"></p><p class="privacy-note"><span>♡</span> Colour analysis and recommendations run in your browser. Your photo is not uploaded to an AI service.</p>
+      </section>
+      <section class="aesthetic-panel" aria-labelledby="aesthetic-title"><div class="panel-top"><div><p class="eyebrow">Step 02</p><h2 id="aesthetic-title">Choose your aesthetic</h2></div><span class="panel-step">02 <i>/ 02</i></span></div><p class="panel-description">What are you feeling today? Pick the vibe that feels like you.</p>
+        <div class="aesthetic-options" id="aesthetic-options"><button class="aesthetic-option" type="button" data-aesthetic="Casual"><span>☼</span>Casual</button><button class="aesthetic-option" type="button" data-aesthetic="Tomboy"><span>↗</span>Tomboy</button><button class="aesthetic-option" type="button" data-aesthetic="Girly"><span>✿</span>Girly</button><button class="aesthetic-option" type="button" data-aesthetic="Streetwear"><span>◈</span>Streetwear</button><button class="aesthetic-option" type="button" data-aesthetic="Old Money"><span>♧</span>Old Money</button><button class="aesthetic-option" type="button" data-aesthetic="Coquette"><span>♡</span>Coquette</button><button class="aesthetic-option" type="button" data-aesthetic="Minimalist"><span>○</span>Minimalist</button><button class="aesthetic-option" type="button" data-aesthetic="Y2K"><span>✳</span>Y2K</button></div>
+        <p class="upload-message" id="aesthetic-message" role="status" aria-live="polite"></p><button class="button button-dark generate-button" id="generate-button" type="submit">Generate my outfit <span>↗</span></button><p class="demo-note">Local colour matching only — FitMatch does not identify garment type or pattern.</p>
+      </section>
+    </form>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">f.</span> fitmatch</a><p>Good style is just being yourself, out loud.</p><span>© 2026 FitMatch. Made for your next favorite look.</span></footer>
+</body>
+</html>
